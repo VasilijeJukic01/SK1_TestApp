@@ -1,4 +1,4 @@
-package view.hbox;
+package app.view.hbox;
 
 import javafx.geometry.Insets;
 import javafx.geometry.Pos;

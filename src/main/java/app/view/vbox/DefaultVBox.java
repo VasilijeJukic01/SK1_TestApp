@@ -1,4 +1,4 @@
-package view.vbox;
+package app.view.vbox;
 
 import javafx.geometry.Insets;
 import javafx.geometry.Pos;

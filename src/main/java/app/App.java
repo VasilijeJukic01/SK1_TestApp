@@ -1,6 +1,8 @@
+package app;
+
+import app.view.MainView;
 import javafx.application.Application;
 import javafx.stage.Stage;
-import view.MainView;
 
 public class App extends Application {
 
@@ -9,4 +11,3 @@ public class App extends Application {
         MainView.getInstance().show();
     }
 }
-
