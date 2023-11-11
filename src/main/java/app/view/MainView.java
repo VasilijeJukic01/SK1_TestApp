@@ -1,11 +1,9 @@
 package app.view;
 
+import app.controller.ImportController;
 import app.controller.RemoveController;
+import app.util.Utils;
 import com.raf.sk.specification.model.Appointment;
-import app.controller.Core;
-import com.raf.sk.specification.model.Day;
-import javafx.beans.property.SimpleObjectProperty;
-import javafx.collections.FXCollections;
 import javafx.geometry.Pos;
 import javafx.scene.Scene;
 import javafx.scene.control.*;
@@ -21,9 +19,15 @@ public class MainView extends Stage {
 
     private final DefaultVBox root = new DefaultVBox(Pos.CENTER);
 
+    private final Label lbTotalAppointments = new Label("Total appointments: ");
+    private final Label lbTotalAppointmentsValue = new Label();
+    private final Label lbTotalFreeAppointments = new Label("Total free appointments: ");
+    private final Label lbTotalFreeAppointmentsValue = new Label();
+
     private final Button btnAdd = new Button("Add");
     private final Button btnRemove = new Button("Remove");
     private final Button btnChange = new Button("Change");
+    private final Button btnShowFree = new Button("Show Free");
     private final Button btnImport = new Button("Import");
     private final Button btnExport = new Button("Export");
     private final TableView<Appointment> tvAppointments = new TableView<>();
@@ -59,44 +63,49 @@ public class MainView extends Stage {
     private void initComponents() {
         this.root.getChildren().addAll(
                 new DefaultHBox(Pos.CENTER, btnImport, btnExport),
+                new DefaultHBox(Pos.CENTER_LEFT, lbTotalAppointments, lbTotalAppointmentsValue),
+                new DefaultHBox(Pos.CENTER_LEFT, lbTotalFreeAppointments, lbTotalFreeAppointmentsValue),
                 tvAppointments,
-                new DefaultHBox(Pos.CENTER, btnAdd, btnRemove, btnChange)
+                new DefaultHBox(Pos.CENTER, btnAdd, btnRemove, btnChange, btnShowFree)
         );
 
-        tvAppointments.setItems(FXCollections.observableArrayList(Core.getInstance().getAppointments()));
+        Utils.getInstance().forceRefresh(tvAppointments, false);
 
-        for (String columnName : Core.getInstance().getColumns()) {
-            TableColumn<Appointment, String> column = new TableColumn<>(columnName);
-            column.setCellValueFactory(cellData -> {
-                Appointment appointment = cellData.getValue();
-                String cellValue = appointment.getData(columnName);
-                return new SimpleObjectProperty<>(cellValue).asString();
-            });
-            tvAppointments.getColumns().add(column);
-        }
+        lbTotalAppointmentsValue.setText(Utils.getInstance().calculateAppointments());
+        lbTotalFreeAppointmentsValue.setText(Utils.getInstance().calculateFreeAppointments());
 
-        tcDay.setCellValueFactory(cellData -> {
-            Appointment appointment = cellData.getValue();
-            Day day = appointment.getTime().getDay();
-            return new SimpleObjectProperty<>(day).asString();
-        });
-        tcTime.setCellValueFactory(cellData -> {
-            Appointment appointment = cellData.getValue();
-            String timeStart = appointment.getTime().getStartTime();
-            String timeEnd = appointment.getTime().getEndTime();
-            return new SimpleObjectProperty<>(timeStart+"-"+timeEnd).asString();
-        });
-        tcRoom.setCellValueFactory(cellData -> {
-            Appointment appointment = cellData.getValue();
-            return new SimpleObjectProperty<>(appointment.getScheduleRoom().getName()).asString();
-        });
+        Utils.getInstance().generateColumns(tcDay, tcTime, tcRoom);
+
         tvAppointments.getColumns().addAll(tcDay, tcTime, tcRoom);
 
+        btnAdd.setOnAction(event -> AddView.getInstance().show());
         btnRemove.setOnAction(new RemoveController(tvAppointments));
+        btnImport.setOnAction(new ImportController(tvAppointments));
         btnExport.setOnAction(event -> ExportView.getInstance().show());
+        btnShowFree.setOnAction(event -> FreeView.getInstance().show());
     }
 
     public TableView<Appointment> getTvAppointments() {
         return tvAppointments;
+    }
+
+    public Label getLbTotalAppointmentsValue() {
+        return lbTotalAppointmentsValue;
+    }
+
+    public Label getLbTotalFreeAppointmentsValue() {
+        return lbTotalFreeAppointmentsValue;
+    }
+
+    public TableColumn<Appointment, String> getTcDay() {
+        return tcDay;
+    }
+
+    public TableColumn<Appointment, String> getTcRoom() {
+        return tcRoom;
+    }
+
+    public TableColumn<Appointment, String> getTcTime() {
+        return tcTime;
     }
 }

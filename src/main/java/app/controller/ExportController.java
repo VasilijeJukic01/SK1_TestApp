@@ -1,5 +1,6 @@
 package app.controller;
 
+import app.core.Core;
 import app.util.Utils;
 import javafx.event.ActionEvent;
 import javafx.event.EventHandler;

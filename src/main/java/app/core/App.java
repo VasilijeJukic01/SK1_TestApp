@@ -1,4 +1,4 @@
-package app;
+package app.core;
 
 import app.view.MainView;
 import javafx.application.Application;

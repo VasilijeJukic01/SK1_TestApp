@@ -25,7 +25,7 @@ public class ExportView extends Stage {
     private final RadioButton rbJSON = new RadioButton();
     private final ToggleGroup tgExport = new ToggleGroup();
 
-    private final Button btnSave = new Button("Save");
+    private final Button btnSave = new Button("Export");
 
     private ExportView() {
         init();
