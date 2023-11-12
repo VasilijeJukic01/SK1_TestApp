@@ -15,8 +15,6 @@ import javafx.stage.Stage;
 
 import java.io.File;
 import java.io.IOException;
-import java.util.List;
-import java.util.Properties;
 
 public class ImportController implements EventHandler<ActionEvent> {
 
@@ -37,30 +35,37 @@ public class ImportController implements EventHandler<ActionEvent> {
         File selectedFile = fileChooser.showOpenDialog(new Stage());
         if (selectedFile != null) loadFile(selectedFile);
 
-        MainView.getInstance().getLbTotalAppointmentsValue().setText(Utils.getInstance().calculateAppointments());
-        MainView.getInstance().getLbTotalFreeAppointmentsValue().setText(Utils.getInstance().calculateFreeAppointments());
+        Utils.getInstance().forceViewRefresh();
     }
 
     private void loadFile(File selectedFile) {
         try {
-            Properties p = Utils.getInstance().loadProperties("src/main/resources/import.config");
-            Core.getInstance().newSchedule(p);
-            Core.getInstance().getSchedule().loadScheduleFromFile(selectedFile.getAbsolutePath(), p);
-            String[] col = p.getProperty("columns").replaceAll("\"", "").split(",");
-            Core.getInstance().getColumns().clear();
-            Core.getInstance().getColumns().addAll(List.of(col));
+            Core.getInstance().newSchedule();
+            Core.getInstance().getSchedule().loadScheduleFromFile(selectedFile.getAbsolutePath());
 
             tvAppointments.getItems().clear();
 
-            TableColumn<Appointment, String> tcDay = MainView.getInstance().getTcDay();
-            TableColumn<Appointment, String> tcTime = MainView.getInstance().getTcTime();
-            TableColumn<Appointment, String> tcRoom = MainView.getInstance().getTcRoom();
+            TableColumn<Appointment, String> tcDayMain = MainView.getInstance().getTcDay();
+            TableColumn<Appointment, String> tcTimeMain = MainView.getInstance().getTcTime();
+            TableColumn<Appointment, String> tcRoomMain = MainView.getInstance().getTcRoom();
 
-            tvAppointments.getColumns().removeIf(column -> !column.equals(tcDay) && !column.equals(tcTime) && !column.equals(tcRoom));
+            TableColumn<Appointment, String> tcDay = FreeView.getInstance().getTcDay();
+            TableColumn<Appointment, String> tcTime = FreeView.getInstance().getTcTime();
+            TableColumn<Appointment, String> tcRoom = FreeView.getInstance().getTcRoom();
+            TableColumn<Appointment, String> tcDate = FreeView.getInstance().getTcDate();
 
-            Utils.getInstance().forceRefresh(tvAppointments, false);
-            Utils.getInstance().forceRefresh(FreeView.getInstance().getTvAppointments(), true);
+            tvAppointments.getColumns().removeIf(column -> !column.equals(tcDayMain)
+                    && !column.equals(tcTimeMain)
+                    && !column.equals(tcRoomMain)
+            );
+            FreeView.getInstance().getTvAppointments().getColumns().removeIf(column -> !column.equals(tcDay)
+                    && !column.equals(tcTime)
+                    && !column.equals(tcRoom)
+                    && !column.equals(tcDate)
+            );
 
+            Utils.getInstance().forceTableRefresh(tvAppointments, false);
+            Utils.getInstance().forceTableRefresh(FreeView.getInstance().getTvAppointments(), true);
         }
         catch (IOException e) {
             showAlert();

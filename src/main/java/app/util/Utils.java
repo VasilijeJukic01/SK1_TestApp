@@ -1,15 +1,20 @@
 package app.util;
 
 import app.core.Core;
+import app.view.ChangeView;
+import app.view.FreeView;
+import app.view.MainView;
 import com.raf.sk.specification.model.Appointment;
 import com.raf.sk.specification.model.Day;
 import javafx.beans.property.SimpleObjectProperty;
 import javafx.collections.FXCollections;
 import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
+import javafx.scene.control.TextField;
 
 import java.io.FileInputStream;
 import java.io.IOException;
+import java.util.Map;
 import java.util.Properties;
 
 public class Utils {
@@ -41,13 +46,10 @@ public class Utils {
         }
     }
 
-    public void forceRefresh(TableView<Appointment> tvAppointments, boolean isFree) {
-        if (isFree) {
-            tvAppointments.setItems(FXCollections.observableArrayList(Core.getInstance().getFreeAppointments()));
-        }
-        else {
-            tvAppointments.setItems(FXCollections.observableArrayList(Core.getInstance().getAppointments()));
-        }
+    public void forceTableRefresh(TableView<Appointment> tvAppointments, boolean isFree) {
+        if (isFree) tvAppointments.setItems(FXCollections.observableArrayList(Core.getInstance().getFreeAppointments()));
+        else tvAppointments.setItems(FXCollections.observableArrayList(Core.getInstance().getAppointments()));
+
         for (String columnName : Core.getInstance().getColumns()) {
             if (columnName.equalsIgnoreCase("START_DATE") || columnName.equalsIgnoreCase("END_DATE")) {
                 continue;
@@ -57,7 +59,16 @@ public class Utils {
         }
     }
 
-    private static TableColumn<Appointment, String> getAppointmentStringTableColumn(String columnName) {
+    public void forceViewRefresh() {
+        MainView.getInstance().getLbTotalAppointmentsValue().setText(Utils.getInstance().calculateAppointments());
+        MainView.getInstance().getLbTotalFreeAppointmentsValue().setText(Utils.getInstance().calculateFreeAppointments());
+        MainView.getInstance().getTvAppointments().setItems(FXCollections.observableArrayList(Core.getInstance().getAppointments()));
+        FreeView.getInstance().getTvAppointments().setItems(FXCollections.observableArrayList(Core.getInstance().getFreeAppointments()));
+        MainView.getInstance().getTvAppointments().refresh();
+        FreeView.getInstance().getTvAppointments().refresh();
+    }
+
+    private TableColumn<Appointment, String> getAppointmentStringTableColumn(String columnName) {
         TableColumn<Appointment, String> column = new TableColumn<>(columnName);
         column.setCellValueFactory(cellData -> {
             Appointment appointment = cellData.getValue();
@@ -89,6 +100,29 @@ public class Utils {
             Appointment appointment = cellData.getValue();
             return new SimpleObjectProperty<>(appointment.getScheduleRoom().getName()).asString();
         });
+    }
+
+    public void autoFillForChange(Appointment appointment) {
+        int dayIndex = appointment.getTime().getDay().ordinal();
+        int roomIndex = Core.getInstance().getSchedule().getRooms().indexOf(appointment.getScheduleRoom());
+        String time = appointment.getTime().getStartTime()+"-"+appointment.getTime().getEndTime();
+        ChangeView.getInstance().getDay().getSelectionModel().select(dayIndex);
+        ChangeView.getInstance().getCbRoom().getSelectionModel().select(roomIndex);
+        ChangeView.getInstance().getTfTime().setText(time);
+
+        Map<String, TextField> textFields = ChangeView.getInstance().getTextFields();
+        for (String s : textFields.keySet()) {
+            if (s.equalsIgnoreCase("START_DATE")) {
+                textFields.get(s).setText(String.valueOf(appointment.getTime().getStartDate()));
+            }
+            else if (s.equalsIgnoreCase("END_DATE")) {
+                textFields.get(s).setText(String.valueOf(appointment.getTime().getEndDate()));
+            }
+            else {
+                String dataValue = appointment.getData(s);
+                textFields.get(s).setText(dataValue);
+            }
+        }
     }
 
     public String calculateAppointments() {

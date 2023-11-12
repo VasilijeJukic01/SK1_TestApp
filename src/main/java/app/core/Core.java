@@ -13,11 +13,13 @@ public class Core {
 
     private static volatile Core instance;
 
+    private final Properties properties;
     private Schedule schedule;
-    private final List<String> columns = new ArrayList<>();
+    private List<String> columns = new ArrayList<>();
 
     private Core() {
-        this.schedule = new MySchedule(Utils.getInstance().loadProperties("src/main/resources/configuration.config"));
+        this.properties = Utils.getInstance().loadProperties("src/main/resources/configuration.config");
+        this.schedule = new MySchedule(properties);
     }
 
     public static Core getInstance(){
@@ -31,8 +33,13 @@ public class Core {
         return instance;
     }
 
-    public void newSchedule(Properties properties) {
+    public void newSchedule() {
         this.schedule = new MySchedule(properties);
+        this.columns = List.of(properties.getProperty("columns").replaceAll("\"", "").split(","));
+    }
+
+    public Properties getProperties() {
+        return properties;
     }
 
     public Schedule getSchedule() {

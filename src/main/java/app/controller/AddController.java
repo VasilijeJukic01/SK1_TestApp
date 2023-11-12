@@ -2,12 +2,10 @@ package app.controller;
 
 import app.core.Core;
 import app.util.Utils;
-import app.view.MainView;
 import com.raf.sk.specification.model.Appointment;
 import com.raf.sk.specification.model.Day;
 import com.raf.sk.specification.model.ScheduleRoom;
 import com.raf.sk.specification.model.time.ReservedTime;
-import javafx.collections.FXCollections;
 import javafx.event.ActionEvent;
 import javafx.event.EventHandler;
 import javafx.scene.control.ComboBox;
@@ -16,7 +14,6 @@ import javafx.scene.control.TextField;
 import java.time.LocalDate;
 import java.util.LinkedHashMap;
 import java.util.Map;
-import java.util.Properties;
 
 public class AddController implements EventHandler<ActionEvent> {
 
@@ -35,7 +32,6 @@ public class AddController implements EventHandler<ActionEvent> {
 
     @Override
     public void handle(ActionEvent event) {
-        Properties properties = Utils.getInstance().loadProperties("src/main/resources/configuration.config");
         String day = cbDay.getValue();
 
         Map<String, Object> values = new LinkedHashMap<>();
@@ -53,19 +49,15 @@ public class AddController implements EventHandler<ActionEvent> {
             values.put(key, textFields.get(key).getText());
         }
 
-        ReservedTime reservedTime = createTime(startDate, endDate, day, properties);
-
+        ReservedTime reservedTime = createTime(startDate, endDate, day);
         ScheduleRoom scheduleRoom = Core.getInstance().getSchedule().getRoomByName(cbRoom.getValue());
         Appointment a = new Appointment(reservedTime, scheduleRoom, values);
         Core.getInstance().getSchedule().addAppointment(a);
 
-        MainView.getInstance().getLbTotalAppointmentsValue().setText(Utils.getInstance().calculateAppointments());
-        MainView.getInstance().getLbTotalFreeAppointmentsValue().setText(Utils.getInstance().calculateFreeAppointments());
-        MainView.getInstance().getTvAppointments().setItems(FXCollections.observableArrayList(Core.getInstance().getAppointments()));
-        MainView.getInstance().getTvAppointments().refresh();
+        Utils.getInstance().forceViewRefresh();
     }
 
-    private ReservedTime createTime(LocalDate startDate, LocalDate endDate, String day, Properties properties) {
+    private ReservedTime createTime(LocalDate startDate, LocalDate endDate, String day) {
         ReservedTime reservedTime;
         String[] timeData = tfTime.getText().split("-");
 
@@ -76,11 +68,10 @@ public class AddController implements EventHandler<ActionEvent> {
             reservedTime = new ReservedTime(Day.valueOf(day), timeData[0], timeData[1], startDate, startDate);
         }
         else {
-            startDate = LocalDate.parse(properties.getProperty("startDate").replaceAll("\"", ""));
-            endDate = LocalDate.parse(properties.getProperty("endDate").replaceAll("\"", ""));
+            startDate = LocalDate.parse(Core.getInstance().getProperties().getProperty("startDate").replaceAll("\"", ""));
+            endDate = LocalDate.parse(Core.getInstance().getProperties().getProperty("endDate").replaceAll("\"", ""));
             reservedTime = new ReservedTime(Day.valueOf(day), timeData[0], timeData[1], startDate, endDate);
         }
-
         return reservedTime;
     }
 

@@ -24,12 +24,19 @@ public class MainView extends Stage {
     private final Label lbTotalFreeAppointments = new Label("Total free appointments: ");
     private final Label lbTotalFreeAppointmentsValue = new Label();
 
-    private final Button btnAdd = new Button("Add");
-    private final Button btnRemove = new Button("Remove");
-    private final Button btnChange = new Button("Change");
-    private final Button btnShowFree = new Button("Show Free");
+    private final Button btnAdd = new Button("Add Appointment");
+    private final Button btnRemove = new Button("Remove Appointment");
+    private final Button btnChange = new Button("Change Appointment");
+    private final Button btnShowFree = new Button("Free Appointments");
+    private final Button btnAddData = new Button("Add Data");
+    private final Button btnRemoveData = new Button("Remove Data");
+
+    private final Button btnAddRoom = new Button("Add Room");
+    private final Button btnRemoveRoom = new Button("Remove Room");
+
     private final Button btnImport = new Button("Import");
     private final Button btnExport = new Button("Export");
+    private final Button btnChangeConfig = new Button("Change Config");
     private final TableView<Appointment> tvAppointments = new TableView<>();
 
     private final TableColumn<Appointment, String> tcDay = new TableColumn<>("DAY");
@@ -62,23 +69,29 @@ public class MainView extends Stage {
     @SuppressWarnings("unchecked")
     private void initComponents() {
         this.root.getChildren().addAll(
-                new DefaultHBox(Pos.CENTER, btnImport, btnExport),
+                new DefaultHBox(Pos.CENTER, btnImport, btnExport, btnChangeConfig),
                 new DefaultHBox(Pos.CENTER_LEFT, lbTotalAppointments, lbTotalAppointmentsValue),
                 new DefaultHBox(Pos.CENTER_LEFT, lbTotalFreeAppointments, lbTotalFreeAppointmentsValue),
                 tvAppointments,
-                new DefaultHBox(Pos.CENTER, btnAdd, btnRemove, btnChange, btnShowFree)
+                new DefaultHBox(Pos.CENTER, btnAdd, btnRemove, btnChange, btnShowFree),
+                new DefaultHBox(Pos.CENTER, btnAddData, btnRemoveData, btnAddRoom, btnRemoveRoom)
         );
 
-        Utils.getInstance().forceRefresh(tvAppointments, false);
-
+        Utils.getInstance().forceTableRefresh(tvAppointments, false);
         lbTotalAppointmentsValue.setText(Utils.getInstance().calculateAppointments());
         lbTotalFreeAppointmentsValue.setText(Utils.getInstance().calculateFreeAppointments());
-
         Utils.getInstance().generateColumns(tcDay, tcTime, tcRoom);
-
         tvAppointments.getColumns().addAll(tcDay, tcTime, tcRoom);
 
+        initButtons();
+    }
+
+    private void initButtons() {
         btnAdd.setOnAction(event -> AddView.getInstance().show());
+        btnChange.setOnAction(event -> {
+            Utils.getInstance().autoFillForChange(tvAppointments.getSelectionModel().getSelectedItem());
+            ChangeView.getInstance().show();
+        });
         btnRemove.setOnAction(new RemoveController(tvAppointments));
         btnImport.setOnAction(new ImportController(tvAppointments));
         btnExport.setOnAction(event -> ExportView.getInstance().show());

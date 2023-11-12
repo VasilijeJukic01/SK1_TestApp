@@ -44,7 +44,7 @@ public class FreeView  extends Stage {
     private void init() {
         root.getChildren().addAll(tvAppointments, btnClose);
 
-        Utils.getInstance().forceRefresh(tvAppointments, true);
+        Utils.getInstance().forceTableRefresh(tvAppointments, true);
         Utils.getInstance().generateColumns(tcDay, tcTime, tcRoom);
 
         tcDate.setCellValueFactory(cellData -> {
@@ -55,12 +55,28 @@ public class FreeView  extends Stage {
         tvAppointments.getColumns().addAll(tcDay, tcTime, tcDate, tcRoom);
         btnClose.setOnAction(e -> this.close());
 
-        super.setTitle("Add Appointment");
+        super.setTitle("Free Appointments");
         super.setScene(new Scene(root, 500,500));
         this.getScene().getStylesheets().add(Objects.requireNonNull(getClass().getResource("/dark-orange.css")).toExternalForm());
     }
 
     public TableView<Appointment> getTvAppointments() {
         return tvAppointments;
+    }
+
+    public TableColumn<Appointment, String> getTcRoom() {
+        return tcRoom;
+    }
+
+    public TableColumn<Appointment, String> getTcTime() {
+        return tcTime;
+    }
+
+    public TableColumn<Appointment, String> getTcDay() {
+        return tcDay;
+    }
+
+    public TableColumn<Appointment, String> getTcDate() {
+        return tcDate;
     }
 }
