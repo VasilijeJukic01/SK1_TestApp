@@ -28,8 +28,6 @@ public class MainView extends Stage {
     private final Button btnRemove = new Button("Remove Appointment");
     private final Button btnChange = new Button("Change Appointment");
     private final Button btnShowFree = new Button("Free Appointments");
-    private final Button btnAddData = new Button("Add Data");
-    private final Button btnRemoveData = new Button("Remove Data");
 
     private final Button btnAddRoom = new Button("Add Room");
     private final Button btnRemoveRoom = new Button("Remove Room");
@@ -74,7 +72,7 @@ public class MainView extends Stage {
                 new DefaultHBox(Pos.CENTER_LEFT, lbTotalFreeAppointments, lbTotalFreeAppointmentsValue),
                 tvAppointments,
                 new DefaultHBox(Pos.CENTER, btnAdd, btnRemove, btnChange, btnShowFree),
-                new DefaultHBox(Pos.CENTER, btnAddData, btnRemoveData, btnAddRoom, btnRemoveRoom)
+                new DefaultHBox(Pos.CENTER, btnAddRoom, btnRemoveRoom)
         );
 
         Utils.getInstance().forceTableRefresh(tvAppointments, false);
@@ -89,6 +87,7 @@ public class MainView extends Stage {
     private void initButtons() {
         btnAdd.setOnAction(event -> AddView.getInstance().show());
         btnChange.setOnAction(event -> {
+            if (tvAppointments.getSelectionModel().getSelectedItem() == null) return;
             Utils.getInstance().autoFillForChange(tvAppointments.getSelectionModel().getSelectedItem());
             ChangeView.getInstance().show();
         });
@@ -96,6 +95,11 @@ public class MainView extends Stage {
         btnImport.setOnAction(new ImportController(tvAppointments));
         btnExport.setOnAction(event -> ExportView.getInstance().show());
         btnShowFree.setOnAction(event -> FreeView.getInstance().show());
+        btnChangeConfig.setOnAction(event -> ConfigurationView.getInstance().show());
+        btnRemoveRoom.setOnAction(event -> {
+            Utils.getInstance().fillRooms();
+            RemoveRoomView.getInstance().show();
+        });
     }
 
     public TableView<Appointment> getTvAppointments() {

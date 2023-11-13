@@ -4,8 +4,10 @@ import app.core.Core;
 import app.view.ChangeView;
 import app.view.FreeView;
 import app.view.MainView;
+import app.view.RemoveRoomView;
 import com.raf.sk.specification.model.Appointment;
 import com.raf.sk.specification.model.Day;
+import com.raf.sk.specification.model.ScheduleRoom;
 import javafx.beans.property.SimpleObjectProperty;
 import javafx.collections.FXCollections;
 import javafx.scene.control.TableColumn;
@@ -35,8 +37,8 @@ public class Utils {
         return instance;
     }
 
-    public Properties loadProperties(String path) {
-        try (FileInputStream fileInputStream = new FileInputStream(path)) {
+    public Properties loadProperties() {
+        try (FileInputStream fileInputStream = new FileInputStream(getClass().getResource("/configuration.config").getFile())) {
             Properties properties = new Properties();
             properties.load(fileInputStream);
             return properties;
@@ -123,6 +125,14 @@ public class Utils {
                 textFields.get(s).setText(dataValue);
             }
         }
+    }
+
+    public void fillRooms() {
+        RemoveRoomView.getInstance().getCbRooms().getItems().clear();
+        RemoveRoomView.getInstance().getCbRooms().getItems().addAll(Core.getInstance().getSchedule().getRooms().stream()
+                .map(ScheduleRoom::getName)
+                .toArray(String[]::new)
+        );
     }
 
     public String calculateAppointments() {

@@ -33,8 +33,8 @@ public class ChangeController implements EventHandler<ActionEvent> {
     @Override
     public void handle(ActionEvent event) {
         Appointment oldAppointment = MainView.getInstance().getTvAppointments().getSelectionModel().getSelectedItem();
-        if (cbRoom.getSelectionModel().getSelectedItem() == null || cbDay.getSelectionModel().getSelectedItem() == null || tfTime.getText().isEmpty()) return;
         if (oldAppointment == null) return;
+        if (cbRoom.getSelectionModel().getSelectedItem() == null || cbDay.getSelectionModel().getSelectedItem() == null || tfTime.getText().isEmpty()) return;
 
         ScheduleRoom room = Core.getInstance().getSchedule().getRoomByName(cbRoom.getSelectionModel().getSelectedItem());
         String day = cbDay.getSelectionModel().getSelectedItem();

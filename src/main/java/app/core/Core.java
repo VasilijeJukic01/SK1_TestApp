@@ -5,7 +5,6 @@ import com.raf.sk.specification.model.Appointment;
 import app.util.Utils;
 import component.MySchedule;
 
-import java.util.ArrayList;
 import java.util.List;
 import java.util.Properties;
 
@@ -13,12 +12,13 @@ public class Core {
 
     private static volatile Core instance;
 
-    private final Properties properties;
+    private Properties properties;
     private Schedule schedule;
-    private List<String> columns = new ArrayList<>();
+    private List<String> columns;
 
     private Core() {
-        this.properties = Utils.getInstance().loadProperties("src/main/resources/configuration.config");
+        this.properties = Utils.getInstance().loadProperties();
+        this.columns = List.of(properties.getProperty("columns").replaceAll("\"", "").split(","));
         this.schedule = new MySchedule(properties);
     }
 
@@ -35,6 +35,12 @@ public class Core {
 
     public void newSchedule() {
         this.schedule = new MySchedule(properties);
+        this.columns = List.of(properties.getProperty("columns").replaceAll("\"", "").split(","));
+    }
+
+    public void setConfiguration() {
+        this.properties = Utils.getInstance().loadProperties();
+        this.schedule.setConfig(properties);
         this.columns = List.of(properties.getProperty("columns").replaceAll("\"", "").split(","));
     }
 
