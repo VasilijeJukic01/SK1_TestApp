@@ -20,7 +20,6 @@ public class ConfigurationController  implements EventHandler<ActionEvent> {
 
     @Override
     public void handle(ActionEvent event) {
-        Core.getInstance().setConfiguration();
         Utils.getInstance().forceTableRefresh(MainView.getInstance().getTvAppointments(), false);
 
         tvAppointments.getItems().clear();

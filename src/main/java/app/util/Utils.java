@@ -14,8 +14,10 @@ import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
 import javafx.scene.control.TextField;
 
+import java.io.File;
 import java.io.FileInputStream;
 import java.io.IOException;
+import java.io.InputStream;
 import java.util.Map;
 import java.util.Properties;
 
@@ -38,12 +40,25 @@ public class Utils {
     }
 
     public Properties loadProperties() {
-        try (FileInputStream fileInputStream = new FileInputStream(getClass().getResource("/configuration.config").getFile())) {
+        try (InputStream inputStream = getClass().getResourceAsStream("/configuration.config")) {
+            if (inputStream == null) {
+                return new Properties();
+            }
+
             Properties properties = new Properties();
-            properties.load(fileInputStream);
+            properties.load(inputStream);
             return properties;
+        } catch (IOException e) {
+            throw new RuntimeException(e);
         }
-        catch (IOException e) {
+    }
+
+    public Properties loadPropertiesFromFile(File file) {
+        try (InputStream inputStream = new FileInputStream(file)) {
+            Properties properties = new Properties();
+            properties.load(inputStream);
+            return properties;
+        } catch (IOException e) {
             throw new RuntimeException(e);
         }
     }

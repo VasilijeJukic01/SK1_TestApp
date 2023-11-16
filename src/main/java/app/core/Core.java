@@ -44,8 +44,8 @@ public class Core {
         this.columns = List.of(properties.getProperty("columns").replaceAll("\"", "").split(","));
     }
 
-    public void setConfiguration() {
-        this.properties = Utils.getInstance().loadProperties();
+    public void setConfiguration(Properties p) {
+        this.properties = p;
         this.schedule.setConfig(properties);
         this.columns = List.of(properties.getProperty("columns").replaceAll("\"", "").split(","));
     }

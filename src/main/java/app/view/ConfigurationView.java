@@ -1,6 +1,8 @@
 package app.view;
 
 import app.controller.ConfigurationController;
+import app.core.Core;
+import app.util.Utils;
 import app.view.vbox.DefaultVBox;
 import javafx.geometry.Pos;
 import javafx.scene.Scene;
@@ -10,6 +12,7 @@ import javafx.stage.Stage;
 import java.awt.*;
 import java.io.File;
 import java.util.Objects;
+import java.util.Properties;
 
 public class ConfigurationView extends Stage {
 
@@ -17,8 +20,8 @@ public class ConfigurationView extends Stage {
 
     private final DefaultVBox root = new DefaultVBox(Pos.CENTER);
 
-    private final Button btnLoad = new Button("Load Configuration");
-    private final Button btnSave = new Button("Save Changes");
+    private final Button btnUpload = new Button("Upload Configuration");
+    private final Button btnClose = new Button("Save Changes");
 
     private ConfigurationView() {
         init();
@@ -36,21 +39,20 @@ public class ConfigurationView extends Stage {
     }
 
     private void init() {
-        root.getChildren().addAll(btnLoad, btnSave);
+        root.getChildren().addAll(btnUpload, btnClose);
 
-        btnLoad.setOnAction(event -> {
-            try {
-                File file = new File(getClass().getResource("/configuration.config").getFile());
-                if (Desktop.isDesktopSupported()) {
-                    Desktop desktop = Desktop.getDesktop();
-                    if (file.exists()) {
-                        desktop.open(file);
-                    }
-                }
-            } catch (Exception ignored) {}
+        btnUpload.setOnAction(event -> {
+            FileDialog dialog = new FileDialog((Frame)null, "Select File to Open");
+            dialog.setMode(FileDialog.LOAD);
+            dialog.setVisible(true);
+            String file = dialog.getFile();
+            if (file != null) {
+                Properties p = Utils.getInstance().loadPropertiesFromFile(new File(dialog.getDirectory() + file));
+                Core.getInstance().setConfiguration(p);
+            }
         });
 
-        btnSave.setOnAction(new ConfigurationController(MainView.getInstance().getTvAppointments()));
+        btnClose.setOnAction(new ConfigurationController(MainView.getInstance().getTvAppointments()));
 
         super.setTitle("Export");
         super.setResizable(false);
