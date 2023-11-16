@@ -28,6 +28,7 @@ public class MainView extends Stage {
     private final Button btnRemove = new Button("Remove Appointment");
     private final Button btnChange = new Button("Change Appointment");
     private final Button btnShowFree = new Button("Free Appointments");
+    private final Button btnFilter = new Button("Filter");
 
     private final Button btnAddRoom = new Button("Add Room");
     private final Button btnRemoveRoom = new Button("Remove Room");
@@ -71,7 +72,7 @@ public class MainView extends Stage {
                 new DefaultHBox(Pos.CENTER_LEFT, lbTotalAppointments, lbTotalAppointmentsValue),
                 new DefaultHBox(Pos.CENTER_LEFT, lbTotalFreeAppointments, lbTotalFreeAppointmentsValue),
                 tvAppointments,
-                new DefaultHBox(Pos.CENTER, btnAdd, btnRemove, btnChange, btnShowFree),
+                new DefaultHBox(Pos.CENTER, btnAdd, btnRemove, btnChange, btnShowFree, btnFilter),
                 new DefaultHBox(Pos.CENTER, btnAddRoom, btnRemoveRoom)
         );
 
@@ -95,7 +96,9 @@ public class MainView extends Stage {
         btnImport.setOnAction(new ImportController(tvAppointments));
         btnExport.setOnAction(event -> ExportView.getInstance().show());
         btnShowFree.setOnAction(event -> FreeView.getInstance().show());
+        btnFilter.setOnAction(event -> FilterView.getInstance().show());
         btnChangeConfig.setOnAction(event -> ConfigurationView.getInstance().show());
+        btnAddRoom.setOnAction(event -> AddRoomView.getInstance().show());
         btnRemoveRoom.setOnAction(event -> {
             Utils.getInstance().fillRooms();
             RemoveRoomView.getInstance().show();
