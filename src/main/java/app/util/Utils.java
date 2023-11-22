@@ -68,9 +68,6 @@ public class Utils {
         else tvAppointments.setItems(FXCollections.observableArrayList(Core.getInstance().getAppointments()));
 
         for (String columnName : Core.getInstance().getColumns()) {
-            if (columnName.equalsIgnoreCase("START_DATE") || columnName.equalsIgnoreCase("END_DATE")) {
-                continue;
-            }
             TableColumn<Appointment, String> column = getAppointmentStringTableColumn(columnName);
             tvAppointments.getColumns().add(column);
         }

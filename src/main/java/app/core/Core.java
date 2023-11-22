@@ -40,6 +40,7 @@ public class Core {
     }
 
     public void newSchedule() {
+        schedule.initSchedule(properties);
         schedule.setConfig(properties);
         this.columns = List.of(properties.getProperty("columns").replaceAll("\"", "").split(","));
     }

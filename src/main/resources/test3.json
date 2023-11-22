@@ -1,0 +1,2062 @@
+[
+  {
+    "time": {
+      "day": "TUESDAY",
+      "startTime": "11:15",
+      "endTime": "13:00",
+      "startDate": "2023-01-01",
+      "endDate": "2023-12-31"
+    },
+    "scheduleRoom": {
+      "name": "Raf04 (u)",
+      "capacity": 0,
+      "equipment": [
+        {
+          "name": "PC",
+          "amount": 30
+        }
+      ]
+    },
+    "data": {
+      "SUBJECT": "Poslovne aplikacije",
+      "TYPE": "V",
+      "PROFESSOR": "Mijatovic Igor",
+      "GROUPS": "101"
+    }
+  },
+  {
+    "time": {
+      "day": "MONDAY",
+      "startTime": "13:15",
+      "endTime": "15:00",
+      "startDate": "2023-01-01",
+      "endDate": "2023-12-31"
+    },
+    "scheduleRoom": {
+      "name": "Rg07 (u)",
+      "capacity": 0,
+      "equipment": []
+    },
+    "data": {
+      "SUBJECT": "Uvod u programiranje",
+      "TYPE": "D",
+      "PROFESSOR": "Brnabic Mateja",
+      "GROUPS": "101"
+    }
+  },
+  {
+    "time": {
+      "day": "TUESDAY",
+      "startTime": "13:15",
+      "endTime": "15:00",
+      "startDate": "2023-01-01",
+      "endDate": "2023-12-31"
+    },
+    "scheduleRoom": {
+      "name": "Raf02 (u)",
+      "capacity": 0,
+      "equipment": []
+    },
+    "data": {
+      "SUBJECT": "Uvod u programiranje",
+      "TYPE": "V",
+      "PROFESSOR": "Tomic Milan",
+      "GROUPS": "101"
+    }
+  },
+  {
+    "time": {
+      "day": "TUESDAY",
+      "startTime": "17:15",
+      "endTime": "20:00",
+      "startDate": "2023-01-01",
+      "endDate": "2023-12-31"
+    },
+    "scheduleRoom": {
+      "name": "Raf21 (a)",
+      "capacity": 0,
+      "equipment": []
+    },
+    "data": {
+      "SUBJECT": "Diskretne strukture",
+      "TYPE": "V",
+      "PROFESSOR": "Jeremic Adrijana",
+      "GROUPS": "101, 102, 103"
+    }
+  },
+  {
+    "time": {
+      "day": "WEDNESDAY",
+      "startTime": "16:15",
+      "endTime": "18:00",
+      "startDate": "2023-01-01",
+      "endDate": "2023-12-31"
+    },
+    "scheduleRoom": {
+      "name": "Raf06 (a)",
+      "capacity": 0,
+      "equipment": []
+    },
+    "data": {
+      "SUBJECT": "Diskretne strukture",
+      "TYPE": "P",
+      "PROFESSOR": "Jovanovic Irena",
+      "GROUPS": "101, 102, 103"
+    }
+  },
+  {
+    "time": {
+      "day": "TUESDAY",
+      "startTime": "15:15",
+      "endTime": "17:00",
+      "startDate": "2023-01-01",
+      "endDate": "2023-12-31"
+    },
+    "scheduleRoom": {
+      "name": "Raf21 (a)",
+      "capacity": 0,
+      "equipment": []
+    },
+    "data": {
+      "SUBJECT": "Engleski 1",
+      "TYPE": "P",
+      "PROFESSOR": "Cuk Bojana",
+      "GROUPS": "101, 102, 103"
+    }
+  },
+  {
+    "time": {
+      "day": "WEDNESDAY",
+      "startTime": "18:15",
+      "endTime": "21:00",
+      "startDate": "2023-01-01",
+      "endDate": "2023-12-31"
+    },
+    "scheduleRoom": {
+      "name": "Raf20 (a)",
+      "capacity": 0,
+      "equipment": []
+    },
+    "data": {
+      "SUBJECT": "Linearna algebra i analiticka geometrija",
+      "TYPE": "P",
+      "PROFESSOR": "Jovanovic Jelena",
+      "GROUPS": "101, 102, 103"
+    }
+  },
+  {
+    "time": {
+      "day": "THURSDAY",
+      "startTime": "18:15",
+      "endTime": "21:00",
+      "startDate": "2023-01-01",
+      "endDate": "2023-12-31"
+    },
+    "scheduleRoom": {
+      "name": "Raf20 (a)",
+      "capacity": 0,
+      "equipment": []
+    },
+    "data": {
+      "SUBJECT": "Linearna algebra i analiticka geometrija",
+      "TYPE": "V",
+      "PROFESSOR": "Jovanovic Jelena",
+      "GROUPS": "101, 102, 103"
+    }
+  },
+  {
+    "time": {
+      "day": "MONDAY",
+      "startTime": "11:15",
+      "endTime": "13:00",
+      "startDate": "2023-01-01",
+      "endDate": "2023-12-31"
+    },
+    "scheduleRoom": {
+      "name": "Kolarac2",
+      "capacity": 0,
+      "equipment": []
+    },
+    "data": {
+      "SUBJECT": "Uvod u programiranje",
+      "TYPE": "P",
+      "PROFESSOR": "Urosevic Dragan",
+      "GROUPS": "101, 102, 103"
+    }
+  },
+  {
+    "time": {
+      "day": "MONDAY",
+      "startTime": "13:15",
+      "endTime": "15:00",
+      "startDate": "2023-01-01",
+      "endDate": "2023-12-31"
+    },
+    "scheduleRoom": {
+      "name": "Raf04 (u)",
+      "capacity": 0,
+      "equipment": [
+        {
+          "name": "PC",
+          "amount": 30
+        }
+      ]
+    },
+    "data": {
+      "SUBJECT": "Poslovne aplikacije",
+      "TYPE": "V",
+      "PROFESSOR": "Mijatovic Igor",
+      "GROUPS": "102"
+    }
+  },
+  {
+    "time": {
+      "day": "MONDAY",
+      "startTime": "15:15",
+      "endTime": "17:00",
+      "startDate": "2023-01-01",
+      "endDate": "2023-12-31"
+    },
+    "scheduleRoom": {
+      "name": "Rg07 (u)",
+      "capacity": 0,
+      "equipment": []
+    },
+    "data": {
+      "SUBJECT": "Uvod u programiranje",
+      "TYPE": "D",
+      "PROFESSOR": "Brnabic Mateja",
+      "GROUPS": "102"
+    }
+  },
+  {
+    "time": {
+      "day": "THURSDAY",
+      "startTime": "15:15",
+      "endTime": "17:00",
+      "startDate": "2023-01-01",
+      "endDate": "2023-12-31"
+    },
+    "scheduleRoom": {
+      "name": "Raf04 (u)",
+      "capacity": 0,
+      "equipment": [
+        {
+          "name": "PC",
+          "amount": 30
+        }
+      ]
+    },
+    "data": {
+      "SUBJECT": "Uvod u programiranje",
+      "TYPE": "V",
+      "PROFESSOR": "Tomic Milan",
+      "GROUPS": "102"
+    }
+  },
+  {
+    "time": {
+      "day": "THURSDAY",
+      "startTime": "13:15",
+      "endTime": "15:00",
+      "startDate": "2023-01-01",
+      "endDate": "2023-12-31"
+    },
+    "scheduleRoom": {
+      "name": "Raf04 (u)",
+      "capacity": 0,
+      "equipment": [
+        {
+          "name": "PC",
+          "amount": 30
+        }
+      ]
+    },
+    "data": {
+      "SUBJECT": "Poslovne aplikacije",
+      "TYPE": "V",
+      "PROFESSOR": "Mijatovic Igor",
+      "GROUPS": "103"
+    }
+  },
+  {
+    "time": {
+      "day": "THURSDAY",
+      "startTime": "15:15",
+      "endTime": "17:00",
+      "startDate": "2023-01-01",
+      "endDate": "2023-12-31"
+    },
+    "scheduleRoom": {
+      "name": "Raf07 (u)",
+      "capacity": 0,
+      "equipment": []
+    },
+    "data": {
+      "SUBJECT": "Uvod u programiranje",
+      "TYPE": "D",
+      "PROFESSOR": "Matovic Vanja",
+      "GROUPS": "103"
+    }
+  },
+  {
+    "time": {
+      "day": "MONDAY",
+      "startTime": "14:15",
+      "endTime": "16:00",
+      "startDate": "2023-01-01",
+      "endDate": "2023-12-31"
+    },
+    "scheduleRoom": {
+      "name": "Raf07 (u)",
+      "capacity": 0,
+      "equipment": []
+    },
+    "data": {
+      "SUBJECT": "Uvod u programiranje",
+      "TYPE": "V",
+      "PROFESSOR": "Tomic Milan",
+      "GROUPS": "103"
+    }
+  },
+  {
+    "time": {
+      "day": "MONDAY",
+      "startTime": "15:15",
+      "endTime": "17:00",
+      "startDate": "2023-01-01",
+      "endDate": "2023-12-31"
+    },
+    "scheduleRoom": {
+      "name": "Raf04 (u)",
+      "capacity": 0,
+      "equipment": [
+        {
+          "name": "PC",
+          "amount": 30
+        }
+      ]
+    },
+    "data": {
+      "SUBJECT": "Poslovne aplikacije",
+      "TYPE": "V",
+      "PROFESSOR": "Mijatovic Igor",
+      "GROUPS": "104"
+    }
+  },
+  {
+    "time": {
+      "day": "WEDNESDAY",
+      "startTime": "10:15",
+      "endTime": "12:00",
+      "startDate": "2023-01-01",
+      "endDate": "2023-12-31"
+    },
+    "scheduleRoom": {
+      "name": "Raf05 (u)",
+      "capacity": 0,
+      "equipment": []
+    },
+    "data": {
+      "SUBJECT": "Uvod u programiranje",
+      "TYPE": "D",
+      "PROFESSOR": "Matovic Vanja",
+      "GROUPS": "104"
+    }
+  },
+  {
+    "time": {
+      "day": "WEDNESDAY",
+      "startTime": "12:15",
+      "endTime": "14:00",
+      "startDate": "2023-01-01",
+      "endDate": "2023-12-31"
+    },
+    "scheduleRoom": {
+      "name": "Raf05 (u)",
+      "capacity": 0,
+      "equipment": []
+    },
+    "data": {
+      "SUBJECT": "Uvod u programiranje",
+      "TYPE": "V",
+      "PROFESSOR": "Jovanovic Mladen",
+      "GROUPS": "104"
+    }
+  },
+  {
+    "time": {
+      "day": "WEDNESDAY",
+      "startTime": "16:15",
+      "endTime": "19:00",
+      "startDate": "2023-01-01",
+      "endDate": "2023-12-31"
+    },
+    "scheduleRoom": {
+      "name": "Kolarac3",
+      "capacity": 0,
+      "equipment": []
+    },
+    "data": {
+      "SUBJECT": "Linearna algebra i analiticka geometrija",
+      "TYPE": "P",
+      "PROFESSOR": "Gardasevic Filipovic Milanka",
+      "GROUPS": "104, 105"
+    }
+  },
+  {
+    "time": {
+      "day": "TUESDAY",
+      "startTime": "15:15",
+      "endTime": "17:00",
+      "startDate": "2023-01-01",
+      "endDate": "2023-12-31"
+    },
+    "scheduleRoom": {
+      "name": "Raf20 (a)",
+      "capacity": 0,
+      "equipment": []
+    },
+    "data": {
+      "SUBJECT": "Diskretne strukture",
+      "TYPE": "P",
+      "PROFESSOR": "Jovanovic Irena",
+      "GROUPS": "104, 105, 106"
+    }
+  },
+  {
+    "time": {
+      "day": "FRIDAY",
+      "startTime": "18:15",
+      "endTime": "21:00",
+      "startDate": "2023-01-01",
+      "endDate": "2023-12-31"
+    },
+    "scheduleRoom": {
+      "name": "Raf20 (a)",
+      "capacity": 0,
+      "equipment": []
+    },
+    "data": {
+      "SUBJECT": "Diskretne strukture",
+      "TYPE": "V",
+      "PROFESSOR": "Jeremic Adrijana",
+      "GROUPS": "104, 105, 106"
+    }
+  },
+  {
+    "time": {
+      "day": "THURSDAY",
+      "startTime": "13:15",
+      "endTime": "15:00",
+      "startDate": "2023-01-01",
+      "endDate": "2023-12-31"
+    },
+    "scheduleRoom": {
+      "name": "Raf21 (a)",
+      "capacity": 0,
+      "equipment": []
+    },
+    "data": {
+      "SUBJECT": "Uvod u programiranje",
+      "TYPE": "P",
+      "PROFESSOR": "Mladenovic Marko",
+      "GROUPS": "104, 105, 106"
+    }
+  },
+  {
+    "time": {
+      "day": "TUESDAY",
+      "startTime": "17:15",
+      "endTime": "20:00",
+      "startDate": "2023-01-01",
+      "endDate": "2023-12-31"
+    },
+    "scheduleRoom": {
+      "name": "Kolarac3",
+      "capacity": 0,
+      "equipment": []
+    },
+    "data": {
+      "SUBJECT": "Linearna algebra i analiticka geometrija",
+      "TYPE": "V",
+      "PROFESSOR": "Jerotijevic Marija",
+      "GROUPS": "104, 107, 112"
+    }
+  },
+  {
+    "time": {
+      "day": "MONDAY",
+      "startTime": "17:15",
+      "endTime": "19:00",
+      "startDate": "2023-01-01",
+      "endDate": "2023-12-31"
+    },
+    "scheduleRoom": {
+      "name": "Raf11 (a)",
+      "capacity": 0,
+      "equipment": []
+    },
+    "data": {
+      "SUBJECT": "Engleski 1",
+      "TYPE": "P",
+      "PROFESSOR": "Cuk Bojana",
+      "GROUPS": "104, 112"
+    }
+  },
+  {
+    "time": {
+      "day": "THURSDAY",
+      "startTime": "11:15",
+      "endTime": "13:00",
+      "startDate": "2023-01-01",
+      "endDate": "2023-12-31"
+    },
+    "scheduleRoom": {
+      "name": "Raf04 (u)",
+      "capacity": 0,
+      "equipment": [
+        {
+          "name": "PC",
+          "amount": 30
+        }
+      ]
+    },
+    "data": {
+      "SUBJECT": "Poslovne aplikacije",
+      "TYPE": "V",
+      "PROFESSOR": "Mijatovic Igor",
+      "GROUPS": "105"
+    }
+  },
+  {
+    "time": {
+      "day": "TUESDAY",
+      "startTime": "18:15",
+      "endTime": "20:00",
+      "startDate": "2023-01-01",
+      "endDate": "2023-12-31"
+    },
+    "scheduleRoom": {
+      "name": "Raf02 (u)",
+      "capacity": 0,
+      "equipment": []
+    },
+    "data": {
+      "SUBJECT": "Uvod u programiranje",
+      "TYPE": "D",
+      "PROFESSOR": "Stojanovic Mihajlo",
+      "GROUPS": "105"
+    }
+  },
+  {
+    "time": {
+      "day": "TUESDAY",
+      "startTime": "13:15",
+      "endTime": "15:00",
+      "startDate": "2023-01-01",
+      "endDate": "2023-12-31"
+    },
+    "scheduleRoom": {
+      "name": "Rg07 (u)",
+      "capacity": 0,
+      "equipment": []
+    },
+    "data": {
+      "SUBJECT": "Uvod u programiranje",
+      "TYPE": "V",
+      "PROFESSOR": "Jovanovic Mladen",
+      "GROUPS": "105"
+    }
+  },
+  {
+    "time": {
+      "day": "FRIDAY",
+      "startTime": "15:15",
+      "endTime": "18:00",
+      "startDate": "2023-01-01",
+      "endDate": "2023-12-31"
+    },
+    "scheduleRoom": {
+      "name": "Raf20 (a)",
+      "capacity": 0,
+      "equipment": []
+    },
+    "data": {
+      "SUBJECT": "Linearna algebra i analiticka geometrija",
+      "TYPE": "V",
+      "PROFESSOR": "Jerotijevic Marija",
+      "GROUPS": "105, 106"
+    }
+  },
+  {
+    "time": {
+      "day": "WEDNESDAY",
+      "startTime": "13:15",
+      "endTime": "15:00",
+      "startDate": "2023-01-01",
+      "endDate": "2023-12-31"
+    },
+    "scheduleRoom": {
+      "name": "Raf04 (u)",
+      "capacity": 0,
+      "equipment": [
+        {
+          "name": "PC",
+          "amount": 30
+        }
+      ]
+    },
+    "data": {
+      "SUBJECT": "Poslovne aplikacije",
+      "TYPE": "V",
+      "PROFESSOR": "Mijatovic Igor",
+      "GROUPS": "106"
+    }
+  },
+  {
+    "time": {
+      "day": "THURSDAY",
+      "startTime": "15:15",
+      "endTime": "17:00",
+      "startDate": "2023-01-01",
+      "endDate": "2023-12-31"
+    },
+    "scheduleRoom": {
+      "name": "Rg02 (u)",
+      "capacity": 0,
+      "equipment": []
+    },
+    "data": {
+      "SUBJECT": "Uvod u programiranje",
+      "TYPE": "D",
+      "PROFESSOR": "Stojanovic Mihajlo",
+      "GROUPS": "106"
+    }
+  },
+  {
+    "time": {
+      "day": "WEDNESDAY",
+      "startTime": "10:15",
+      "endTime": "12:00",
+      "startDate": "2023-01-01",
+      "endDate": "2023-12-31"
+    },
+    "scheduleRoom": {
+      "name": "Raf07 (u)",
+      "capacity": 0,
+      "equipment": []
+    },
+    "data": {
+      "SUBJECT": "Uvod u programiranje",
+      "TYPE": "V",
+      "PROFESSOR": "Jovanovic Mladen",
+      "GROUPS": "106"
+    }
+  },
+  {
+    "time": {
+      "day": "TUESDAY",
+      "startTime": "13:15",
+      "endTime": "15:00",
+      "startDate": "2023-01-01",
+      "endDate": "2023-12-31"
+    },
+    "scheduleRoom": {
+      "name": "Kolarac3",
+      "capacity": 0,
+      "equipment": []
+    },
+    "data": {
+      "SUBJECT": "Engleski 1",
+      "TYPE": "P",
+      "PROFESSOR": "Cuk Bojana",
+      "GROUPS": "106, 107"
+    }
+  },
+  {
+    "time": {
+      "day": "MONDAY",
+      "startTime": "17:15",
+      "endTime": "20:00",
+      "startDate": "2023-01-01",
+      "endDate": "2023-12-31"
+    },
+    "scheduleRoom": {
+      "name": "Raf20 (a)",
+      "capacity": 0,
+      "equipment": []
+    },
+    "data": {
+      "SUBJECT": "Linearna algebra i analiticka geometrija",
+      "TYPE": "P",
+      "PROFESSOR": "Gardasevic Filipovic Milanka",
+      "GROUPS": "106, 108"
+    }
+  },
+  {
+    "time": {
+      "day": "MONDAY",
+      "startTime": "11:15",
+      "endTime": "13:00",
+      "startDate": "2023-01-01",
+      "endDate": "2023-12-31"
+    },
+    "scheduleRoom": {
+      "name": "Raf04 (u)",
+      "capacity": 0,
+      "equipment": [
+        {
+          "name": "PC",
+          "amount": 30
+        }
+      ]
+    },
+    "data": {
+      "SUBJECT": "Poslovne aplikacije",
+      "TYPE": "V",
+      "PROFESSOR": "Mijatovic Igor",
+      "GROUPS": "107"
+    }
+  },
+  {
+    "time": {
+      "day": "FRIDAY",
+      "startTime": "18:15",
+      "endTime": "20:00",
+      "startDate": "2023-01-01",
+      "endDate": "2023-12-31"
+    },
+    "scheduleRoom": {
+      "name": "Raf04 (u)",
+      "capacity": 0,
+      "equipment": [
+        {
+          "name": "PC",
+          "amount": 30
+        }
+      ]
+    },
+    "data": {
+      "SUBJECT": "Uvod u programiranje",
+      "TYPE": "D",
+      "PROFESSOR": "Dejanovic Lazar",
+      "GROUPS": "107"
+    }
+  },
+  {
+    "time": {
+      "day": "MONDAY",
+      "startTime": "09:15",
+      "endTime": "11:00",
+      "startDate": "2023-01-01",
+      "endDate": "2023-12-31"
+    },
+    "scheduleRoom": {
+      "name": "Raf05 (u)",
+      "capacity": 0,
+      "equipment": []
+    },
+    "data": {
+      "SUBJECT": "Uvod u programiranje",
+      "TYPE": "V",
+      "PROFESSOR": "Najdic Jefimija",
+      "GROUPS": "107"
+    }
+  },
+  {
+    "time": {
+      "day": "WEDNESDAY",
+      "startTime": "13:15",
+      "endTime": "15:00",
+      "startDate": "2023-01-01",
+      "endDate": "2023-12-31"
+    },
+    "scheduleRoom": {
+      "name": "Raf21 (a)",
+      "capacity": 0,
+      "equipment": []
+    },
+    "data": {
+      "SUBJECT": "Diskretne strukture",
+      "TYPE": "P",
+      "PROFESSOR": "Jovanovic Irena",
+      "GROUPS": "107, 108, 109"
+    }
+  },
+  {
+    "time": {
+      "day": "FRIDAY",
+      "startTime": "15:15",
+      "endTime": "18:00",
+      "startDate": "2023-01-01",
+      "endDate": "2023-12-31"
+    },
+    "scheduleRoom": {
+      "name": "Raf21 (a)",
+      "capacity": 0,
+      "equipment": []
+    },
+    "data": {
+      "SUBJECT": "Diskretne strukture",
+      "TYPE": "V",
+      "PROFESSOR": "Jeremic Adrijana",
+      "GROUPS": "107, 108, 109"
+    }
+  },
+  {
+    "time": {
+      "day": "THURSDAY",
+      "startTime": "16:15",
+      "endTime": "18:00",
+      "startDate": "2023-01-01",
+      "endDate": "2023-12-31"
+    },
+    "scheduleRoom": {
+      "name": "Raf20 (a)",
+      "capacity": 0,
+      "equipment": []
+    },
+    "data": {
+      "SUBJECT": "Uvod u programiranje",
+      "TYPE": "P",
+      "PROFESSOR": "Mladenovic Marko",
+      "GROUPS": "107, 108, 109"
+    }
+  },
+  {
+    "time": {
+      "day": "THURSDAY",
+      "startTime": "13:15",
+      "endTime": "16:00",
+      "startDate": "2023-01-01",
+      "endDate": "2023-12-31"
+    },
+    "scheduleRoom": {
+      "name": "Raf20 (a)",
+      "capacity": 0,
+      "equipment": []
+    },
+    "data": {
+      "SUBJECT": "Linearna algebra i analiticka geometrija",
+      "TYPE": "P",
+      "PROFESSOR": "Gardasevic Filipovic Milanka",
+      "GROUPS": "107, 109, 110"
+    }
+  },
+  {
+    "time": {
+      "day": "TUESDAY",
+      "startTime": "13:15",
+      "endTime": "15:00",
+      "startDate": "2023-01-01",
+      "endDate": "2023-12-31"
+    },
+    "scheduleRoom": {
+      "name": "Raf04 (u)",
+      "capacity": 0,
+      "equipment": [
+        {
+          "name": "PC",
+          "amount": 30
+        }
+      ]
+    },
+    "data": {
+      "SUBJECT": "Poslovne aplikacije",
+      "TYPE": "V",
+      "PROFESSOR": "Mijatovic Igor",
+      "GROUPS": "108"
+    }
+  },
+  {
+    "time": {
+      "day": "THURSDAY",
+      "startTime": "18:15",
+      "endTime": "20:00",
+      "startDate": "2023-01-01",
+      "endDate": "2023-12-31"
+    },
+    "scheduleRoom": {
+      "name": "Raf07 (u)",
+      "capacity": 0,
+      "equipment": []
+    },
+    "data": {
+      "SUBJECT": "Uvod u programiranje",
+      "TYPE": "D",
+      "PROFESSOR": "Dejanovic Lazar",
+      "GROUPS": "108"
+    }
+  },
+  {
+    "time": {
+      "day": "TUESDAY",
+      "startTime": "11:15",
+      "endTime": "13:00",
+      "startDate": "2023-01-01",
+      "endDate": "2023-12-31"
+    },
+    "scheduleRoom": {
+      "name": "Rg07 (u)",
+      "capacity": 0,
+      "equipment": []
+    },
+    "data": {
+      "SUBJECT": "Uvod u programiranje",
+      "TYPE": "V",
+      "PROFESSOR": "Najdic Jefimija",
+      "GROUPS": "108"
+    }
+  },
+  {
+    "time": {
+      "day": "FRIDAY",
+      "startTime": "10:15",
+      "endTime": "12:00",
+      "startDate": "2023-01-01",
+      "endDate": "2023-12-31"
+    },
+    "scheduleRoom": {
+      "name": "Raf21 (a)",
+      "capacity": 0,
+      "equipment": []
+    },
+    "data": {
+      "SUBJECT": "Engleski 1",
+      "TYPE": "P",
+      "PROFESSOR": "Cuk Bojana",
+      "GROUPS": "108, 109"
+    }
+  },
+  {
+    "time": {
+      "day": "FRIDAY",
+      "startTime": "12:15",
+      "endTime": "15:00",
+      "startDate": "2023-01-01",
+      "endDate": "2023-12-31"
+    },
+    "scheduleRoom": {
+      "name": "Raf21 (a)",
+      "capacity": 0,
+      "equipment": []
+    },
+    "data": {
+      "SUBJECT": "Linearna algebra i analiticka geometrija",
+      "TYPE": "V",
+      "PROFESSOR": "Jerotijevic Marija",
+      "GROUPS": "108, 109"
+    }
+  },
+  {
+    "time": {
+      "day": "WEDNESDAY",
+      "startTime": "11:15",
+      "endTime": "13:00",
+      "startDate": "2023-01-01",
+      "endDate": "2023-12-31"
+    },
+    "scheduleRoom": {
+      "name": "Raf04 (u)",
+      "capacity": 0,
+      "equipment": [
+        {
+          "name": "PC",
+          "amount": 30
+        }
+      ]
+    },
+    "data": {
+      "SUBJECT": "Poslovne aplikacije",
+      "TYPE": "V",
+      "PROFESSOR": "Mijatovic Igor",
+      "GROUPS": "109"
+    }
+  },
+  {
+    "time": {
+      "day": "TUESDAY",
+      "startTime": "17:15",
+      "endTime": "19:00",
+      "startDate": "2023-01-01",
+      "endDate": "2023-12-31"
+    },
+    "scheduleRoom": {
+      "name": "Raf03 (u)",
+      "capacity": 0,
+      "equipment": []
+    },
+    "data": {
+      "SUBJECT": "Uvod u programiranje",
+      "TYPE": "D",
+      "PROFESSOR": "Arsenovic Arsen",
+      "GROUPS": "109"
+    }
+  },
+  {
+    "time": {
+      "day": "TUESDAY",
+      "startTime": "19:15",
+      "endTime": "21:00",
+      "startDate": "2023-01-01",
+      "endDate": "2023-12-31"
+    },
+    "scheduleRoom": {
+      "name": "Raf03 (u)",
+      "capacity": 0,
+      "equipment": []
+    },
+    "data": {
+      "SUBJECT": "Uvod u programiranje",
+      "TYPE": "V",
+      "PROFESSOR": "Redzic Nikola Jovan",
+      "GROUPS": "109"
+    }
+  },
+  {
+    "time": {
+      "day": "TUESDAY",
+      "startTime": "15:15",
+      "endTime": "17:00",
+      "startDate": "2023-01-01",
+      "endDate": "2023-12-31"
+    },
+    "scheduleRoom": {
+      "name": "Raf04 (u)",
+      "capacity": 0,
+      "equipment": [
+        {
+          "name": "PC",
+          "amount": 30
+        }
+      ]
+    },
+    "data": {
+      "SUBJECT": "Poslovne aplikacije",
+      "TYPE": "V",
+      "PROFESSOR": "Mijatovic Igor",
+      "GROUPS": "110"
+    }
+  },
+  {
+    "time": {
+      "day": "MONDAY",
+      "startTime": "19:15",
+      "endTime": "21:00",
+      "startDate": "2023-01-01",
+      "endDate": "2023-12-31"
+    },
+    "scheduleRoom": {
+      "name": "Raf03 (u)",
+      "capacity": 0,
+      "equipment": []
+    },
+    "data": {
+      "SUBJECT": "Uvod u programiranje",
+      "TYPE": "D",
+      "PROFESSOR": "Radenkovic Zarko",
+      "GROUPS": "110"
+    }
+  },
+  {
+    "time": {
+      "day": "WEDNESDAY",
+      "startTime": "13:15",
+      "endTime": "15:00",
+      "startDate": "2023-01-01",
+      "endDate": "2023-12-31"
+    },
+    "scheduleRoom": {
+      "name": "Rg07 (u)",
+      "capacity": 0,
+      "equipment": []
+    },
+    "data": {
+      "SUBJECT": "Uvod u programiranje",
+      "TYPE": "V",
+      "PROFESSOR": "Redzic Nikola Jovan",
+      "GROUPS": "110"
+    }
+  },
+  {
+    "time": {
+      "day": "TUESDAY",
+      "startTime": "17:15",
+      "endTime": "19:00",
+      "startDate": "2023-01-01",
+      "endDate": "2023-12-31"
+    },
+    "scheduleRoom": {
+      "name": "Raf06 (a)",
+      "capacity": 0,
+      "equipment": []
+    },
+    "data": {
+      "SUBJECT": "Engleski 1",
+      "TYPE": "P",
+      "PROFESSOR": "Cuk Bojana",
+      "GROUPS": "110, 111"
+    }
+  },
+  {
+    "time": {
+      "day": "TUESDAY",
+      "startTime": "13:15",
+      "endTime": "15:00",
+      "startDate": "2023-01-01",
+      "endDate": "2023-12-31"
+    },
+    "scheduleRoom": {
+      "name": "Raf21 (a)",
+      "capacity": 0,
+      "equipment": []
+    },
+    "data": {
+      "SUBJECT": "Diskretne strukture",
+      "TYPE": "P",
+      "PROFESSOR": "Jovanovic Irena",
+      "GROUPS": "110, 111, 112, 113"
+    }
+  },
+  {
+    "time": {
+      "day": "MONDAY",
+      "startTime": "12:15",
+      "endTime": "15:00",
+      "startDate": "2023-01-01",
+      "endDate": "2023-12-31"
+    },
+    "scheduleRoom": {
+      "name": "Kolarac3",
+      "capacity": 0,
+      "equipment": []
+    },
+    "data": {
+      "SUBJECT": "Diskretne strukture",
+      "TYPE": "V",
+      "PROFESSOR": "Jeremic Adrijana",
+      "GROUPS": "110, 111, 112, 113"
+    }
+  },
+  {
+    "time": {
+      "day": "WEDNESDAY",
+      "startTime": "19:15",
+      "endTime": "21:00",
+      "startDate": "2023-01-01",
+      "endDate": "2023-12-31"
+    },
+    "scheduleRoom": {
+      "name": "Raf21 (a)",
+      "capacity": 0,
+      "equipment": []
+    },
+    "data": {
+      "SUBJECT": "Uvod u programiranje",
+      "TYPE": "P",
+      "PROFESSOR": "Mladenovic Marko",
+      "GROUPS": "110, 111, 112, 113"
+    }
+  },
+  {
+    "time": {
+      "day": "MONDAY",
+      "startTime": "15:15",
+      "endTime": "18:00",
+      "startDate": "2023-01-01",
+      "endDate": "2023-12-31"
+    },
+    "scheduleRoom": {
+      "name": "Raf21 (a)",
+      "capacity": 0,
+      "equipment": []
+    },
+    "data": {
+      "SUBJECT": "Linearna algebra i analiticka geometrija",
+      "TYPE": "V",
+      "PROFESSOR": "Jerotijevic Marija",
+      "GROUPS": "110, 111, 113"
+    }
+  },
+  {
+    "time": {
+      "day": "MONDAY",
+      "startTime": "09:15",
+      "endTime": "11:00",
+      "startDate": "2023-01-01",
+      "endDate": "2023-12-31"
+    },
+    "scheduleRoom": {
+      "name": "Raf04 (u)",
+      "capacity": 0,
+      "equipment": [
+        {
+          "name": "PC",
+          "amount": 30
+        }
+      ]
+    },
+    "data": {
+      "SUBJECT": "Poslovne aplikacije",
+      "TYPE": "V",
+      "PROFESSOR": "Mijatovic Igor",
+      "GROUPS": "111"
+    }
+  },
+  {
+    "time": {
+      "day": "THURSDAY",
+      "startTime": "17:15",
+      "endTime": "19:00",
+      "startDate": "2023-01-01",
+      "endDate": "2023-12-31"
+    },
+    "scheduleRoom": {
+      "name": "Raf01 (u)",
+      "capacity": 0,
+      "equipment": []
+    },
+    "data": {
+      "SUBJECT": "Uvod u programiranje",
+      "TYPE": "D",
+      "PROFESSOR": "Radenkovic Zarko",
+      "GROUPS": "111"
+    }
+  },
+  {
+    "time": {
+      "day": "THURSDAY",
+      "startTime": "13:15",
+      "endTime": "15:00",
+      "startDate": "2023-01-01",
+      "endDate": "2023-12-31"
+    },
+    "scheduleRoom": {
+      "name": "Rg07 (u)",
+      "capacity": 0,
+      "equipment": []
+    },
+    "data": {
+      "SUBJECT": "Uvod u programiranje",
+      "TYPE": "V",
+      "PROFESSOR": "Najdic Jefimija",
+      "GROUPS": "111"
+    }
+  },
+  {
+    "time": {
+      "day": "FRIDAY",
+      "startTime": "14:15",
+      "endTime": "17:00",
+      "startDate": "2023-01-01",
+      "endDate": "2023-12-31"
+    },
+    "scheduleRoom": {
+      "name": "Kolarac3",
+      "capacity": 0,
+      "equipment": []
+    },
+    "data": {
+      "SUBJECT": "Linearna algebra i analiticka geometrija",
+      "TYPE": "P",
+      "PROFESSOR": "Gardasevic Filipovic Milanka",
+      "GROUPS": "111, 112, 113"
+    }
+  },
+  {
+    "time": {
+      "day": "WEDNESDAY",
+      "startTime": "15:15",
+      "endTime": "17:00",
+      "startDate": "2023-01-01",
+      "endDate": "2023-12-31"
+    },
+    "scheduleRoom": {
+      "name": "Raf04 (u)",
+      "capacity": 0,
+      "equipment": [
+        {
+          "name": "PC",
+          "amount": 30
+        }
+      ]
+    },
+    "data": {
+      "SUBJECT": "Poslovne aplikacije",
+      "TYPE": "V",
+      "PROFESSOR": "Mijatovic Igor",
+      "GROUPS": "112"
+    }
+  },
+  {
+    "time": {
+      "day": "TUESDAY",
+      "startTime": "15:15",
+      "endTime": "17:00",
+      "startDate": "2023-01-01",
+      "endDate": "2023-12-31"
+    },
+    "scheduleRoom": {
+      "name": "Raf03 (u)",
+      "capacity": 0,
+      "equipment": []
+    },
+    "data": {
+      "SUBJECT": "Uvod u programiranje",
+      "TYPE": "D",
+      "PROFESSOR": "Arsenovic Arsen",
+      "GROUPS": "112"
+    }
+  },
+  {
+    "time": {
+      "day": "THURSDAY",
+      "startTime": "11:15",
+      "endTime": "13:00",
+      "startDate": "2023-01-01",
+      "endDate": "2023-12-31"
+    },
+    "scheduleRoom": {
+      "name": "Raf07 (u)",
+      "capacity": 0,
+      "equipment": []
+    },
+    "data": {
+      "SUBJECT": "Uvod u programiranje",
+      "TYPE": "V",
+      "PROFESSOR": "Redzic Nikola Jovan",
+      "GROUPS": "112"
+    }
+  },
+  {
+    "time": {
+      "day": "TUESDAY",
+      "startTime": "09:15",
+      "endTime": "11:00",
+      "startDate": "2023-01-01",
+      "endDate": "2023-12-31"
+    },
+    "scheduleRoom": {
+      "name": "Raf04 (u)",
+      "capacity": 0,
+      "equipment": [
+        {
+          "name": "PC",
+          "amount": 30
+        }
+      ]
+    },
+    "data": {
+      "SUBJECT": "Poslovne aplikacije",
+      "TYPE": "V",
+      "PROFESSOR": "Mijatovic Igor",
+      "GROUPS": "113"
+    }
+  },
+  {
+    "time": {
+      "day": "FRIDAY",
+      "startTime": "12:15",
+      "endTime": "14:00",
+      "startDate": "2023-01-01",
+      "endDate": "2023-12-31"
+    },
+    "scheduleRoom": {
+      "name": "Rg07 (u)",
+      "capacity": 0,
+      "equipment": []
+    },
+    "data": {
+      "SUBJECT": "Uvod u programiranje",
+      "TYPE": "D",
+      "PROFESSOR": "Radenkovic Zarko",
+      "GROUPS": "113"
+    }
+  },
+  {
+    "time": {
+      "day": "WEDNESDAY",
+      "startTime": "17:15",
+      "endTime": "19:00",
+      "startDate": "2023-01-01",
+      "endDate": "2023-12-31"
+    },
+    "scheduleRoom": {
+      "name": "Raf03 (u)",
+      "capacity": 0,
+      "equipment": []
+    },
+    "data": {
+      "SUBJECT": "Uvod u programiranje",
+      "TYPE": "V",
+      "PROFESSOR": "Najdic Jefimija",
+      "GROUPS": "113"
+    }
+  },
+  {
+    "time": {
+      "day": "MONDAY",
+      "startTime": "19:15",
+      "endTime": "21:00",
+      "startDate": "2023-01-01",
+      "endDate": "2023-12-31"
+    },
+    "scheduleRoom": {
+      "name": "Raf21 (a)",
+      "capacity": 0,
+      "equipment": []
+    },
+    "data": {
+      "SUBJECT": "Engleski 1",
+      "TYPE": "P",
+      "PROFESSOR": "Cuk Bojana",
+      "GROUPS": "113, 105"
+    }
+  },
+  {
+    "time": {
+      "day": "THURSDAY",
+      "startTime": "15:15",
+      "endTime": "18:00",
+      "startDate": "2023-01-01",
+      "endDate": "2023-12-31"
+    },
+    "scheduleRoom": {
+      "name": "Raf12 (MD)",
+      "capacity": 0,
+      "equipment": []
+    },
+    "data": {
+      "SUBJECT": "Crtanje i slikanje",
+      "TYPE": "P",
+      "PROFESSOR": "Malesevic Nenad",
+      "GROUPS": "1d1"
+    }
+  },
+  {
+    "time": {
+      "day": "WEDNESDAY",
+      "startTime": "14:15",
+      "endTime": "17:00",
+      "startDate": "2023-01-01",
+      "endDate": "2023-12-31"
+    },
+    "scheduleRoom": {
+      "name": "Raf12 (MD)",
+      "capacity": 0,
+      "equipment": []
+    },
+    "data": {
+      "SUBJECT": "Crtanje i slikanje",
+      "TYPE": "V",
+      "PROFESSOR": "Stojanovic Visnja",
+      "GROUPS": "1d1"
+    }
+  },
+  {
+    "time": {
+      "day": "MONDAY",
+      "startTime": "14:15",
+      "endTime": "17:00",
+      "startDate": "2023-01-01",
+      "endDate": "2023-12-31"
+    },
+    "scheduleRoom": {
+      "name": "Raf14 (MD)",
+      "capacity": 0,
+      "equipment": []
+    },
+    "data": {
+      "SUBJECT": "Osnovi oblikovanja",
+      "TYPE": "V",
+      "PROFESSOR": "Jeremic Lana",
+      "GROUPS": "1d1, 1d2"
+    }
+  },
+  {
+    "time": {
+      "day": "FRIDAY",
+      "startTime": "09:15",
+      "endTime": "12:00",
+      "startDate": "2023-01-01",
+      "endDate": "2023-12-31"
+    },
+    "scheduleRoom": {
+      "name": "Raf14 (MD)",
+      "capacity": 0,
+      "equipment": []
+    },
+    "data": {
+      "SUBJECT": "Osnovi projektovanja",
+      "TYPE": "V",
+      "PROFESSOR": "Stojanovic Visnja",
+      "GROUPS": "1d1, 1d2"
+    }
+  },
+  {
+    "time": {
+      "day": "FRIDAY",
+      "startTime": "12:15",
+      "endTime": "14:00",
+      "startDate": "2023-01-01",
+      "endDate": "2023-12-31"
+    },
+    "scheduleRoom": {
+      "name": "Kolarac3",
+      "capacity": 0,
+      "equipment": []
+    },
+    "data": {
+      "SUBJECT": "Engleski 1",
+      "TYPE": "P",
+      "PROFESSOR": "Cuk Bojana",
+      "GROUPS": "1d1, 1d2, 1d3, 1d4"
+    }
+  },
+  {
+    "time": {
+      "day": "WEDNESDAY",
+      "startTime": "09:15",
+      "endTime": "11:00",
+      "startDate": "2023-01-01",
+      "endDate": "2023-12-31"
+    },
+    "scheduleRoom": {
+      "name": "Raf20 (a)",
+      "capacity": 0,
+      "equipment": []
+    },
+    "data": {
+      "SUBJECT": "Uvod u muzicku produkciju",
+      "TYPE": "PiV",
+      "PROFESSOR": "Medic Ivana",
+      "GROUPS": "1d1, 1d2, 1d3, 1d4"
+    }
+  },
+  {
+    "time": {
+      "day": "TUESDAY",
+      "startTime": "15:15",
+      "endTime": "18:00",
+      "startDate": "2023-01-01",
+      "endDate": "2023-12-31"
+    },
+    "scheduleRoom": {
+      "name": "Raf15 (MD)",
+      "capacity": 0,
+      "equipment": []
+    },
+    "data": {
+      "SUBJECT": "Osnovi oblikovanja",
+      "TYPE": "P",
+      "PROFESSOR": "Malesevic Nenad",
+      "GROUPS": "1d1, 1d3"
+    }
+  },
+  {
+    "time": {
+      "day": "MONDAY",
+      "startTime": "11:15",
+      "endTime": "14:00",
+      "startDate": "2023-01-01",
+      "endDate": "2023-12-31"
+    },
+    "scheduleRoom": {
+      "name": "Raf15 (MD)",
+      "capacity": 0,
+      "equipment": []
+    },
+    "data": {
+      "SUBJECT": "Osnovi projektovanja",
+      "TYPE": "P",
+      "PROFESSOR": "Telarovic Rosana",
+      "GROUPS": "1d1, 1d3"
+    }
+  },
+  {
+    "time": {
+      "day": "MONDAY",
+      "startTime": "09:15",
+      "endTime": "12:00",
+      "startDate": "2023-01-01",
+      "endDate": "2023-12-31"
+    },
+    "scheduleRoom": {
+      "name": "Raf12 (MD)",
+      "capacity": 0,
+      "equipment": []
+    },
+    "data": {
+      "SUBJECT": "Crtanje i slikanje",
+      "TYPE": "P",
+      "PROFESSOR": "Malesevic Nenad",
+      "GROUPS": "1d2"
+    }
+  },
+  {
+    "time": {
+      "day": "WEDNESDAY",
+      "startTime": "11:15",
+      "endTime": "14:00",
+      "startDate": "2023-01-01",
+      "endDate": "2023-12-31"
+    },
+    "scheduleRoom": {
+      "name": "Raf12 (MD)",
+      "capacity": 0,
+      "equipment": []
+    },
+    "data": {
+      "SUBJECT": "Crtanje i slikanje",
+      "TYPE": "V",
+      "PROFESSOR": "Stojanovic Visnja",
+      "GROUPS": "1d2"
+    }
+  },
+  {
+    "time": {
+      "day": "THURSDAY",
+      "startTime": "12:15",
+      "endTime": "15:00",
+      "startDate": "2023-01-01",
+      "endDate": "2023-12-31"
+    },
+    "scheduleRoom": {
+      "name": "Raf15 (MD)",
+      "capacity": 0,
+      "equipment": []
+    },
+    "data": {
+      "SUBJECT": "Osnovi oblikovanja",
+      "TYPE": "P",
+      "PROFESSOR": "Malesevic Nenad",
+      "GROUPS": "1d2, 1d4"
+    }
+  },
+  {
+    "time": {
+      "day": "TUESDAY",
+      "startTime": "09:15",
+      "endTime": "12:00",
+      "startDate": "2023-01-01",
+      "endDate": "2023-12-31"
+    },
+    "scheduleRoom": {
+      "name": "Raf15 (MD)",
+      "capacity": 0,
+      "equipment": []
+    },
+    "data": {
+      "SUBJECT": "Osnovi projektovanja",
+      "TYPE": "P",
+      "PROFESSOR": "Telarovic Rosana",
+      "GROUPS": "1d2, 1d4"
+    }
+  },
+  {
+    "time": {
+      "day": "THURSDAY",
+      "startTime": "09:15",
+      "endTime": "12:00",
+      "startDate": "2023-01-01",
+      "endDate": "2023-12-31"
+    },
+    "scheduleRoom": {
+      "name": "Raf12 (MD)",
+      "capacity": 0,
+      "equipment": []
+    },
+    "data": {
+      "SUBJECT": "Crtanje i slikanje",
+      "TYPE": "P",
+      "PROFESSOR": "Malesevic Nenad",
+      "GROUPS": "1d3, 1d4"
+    }
+  },
+  {
+    "time": {
+      "day": "TUESDAY",
+      "startTime": "12:15",
+      "endTime": "15:00",
+      "startDate": "2023-01-01",
+      "endDate": "2023-12-31"
+    },
+    "scheduleRoom": {
+      "name": "Raf12 (MD)",
+      "capacity": 0,
+      "equipment": []
+    },
+    "data": {
+      "SUBJECT": "Crtanje i slikanje",
+      "TYPE": "V",
+      "PROFESSOR": "Stojanovic Visnja",
+      "GROUPS": "1d3, 1d4"
+    }
+  },
+  {
+    "time": {
+      "day": "MONDAY",
+      "startTime": "17:15",
+      "endTime": "20:00",
+      "startDate": "2023-01-01",
+      "endDate": "2023-12-31"
+    },
+    "scheduleRoom": {
+      "name": "Raf16 (MD)",
+      "capacity": 0,
+      "equipment": []
+    },
+    "data": {
+      "SUBJECT": "Osnovi oblikovanja",
+      "TYPE": "V",
+      "PROFESSOR": "Jeremic Lana",
+      "GROUPS": "1d3, 1d4"
+    }
+  },
+  {
+    "time": {
+      "day": "MONDAY",
+      "startTime": "14:15",
+      "endTime": "17:00",
+      "startDate": "2023-01-01",
+      "endDate": "2023-12-31"
+    },
+    "scheduleRoom": {
+      "name": "Raf16 (MD)",
+      "capacity": 0,
+      "equipment": []
+    },
+    "data": {
+      "SUBJECT": "Osnovi projektovanja",
+      "TYPE": "V",
+      "PROFESSOR": "Stojanovic Visnja",
+      "GROUPS": "1d4, 1d3"
+    }
+  },
+  {
+    "time": {
+      "day": "FRIDAY",
+      "startTime": "09:15",
+      "endTime": "12:00",
+      "startDate": "2023-01-01",
+      "endDate": "2023-12-31"
+    },
+    "scheduleRoom": {
+      "name": "Raf03 (u)",
+      "capacity": 0,
+      "equipment": []
+    },
+    "data": {
+      "SUBJECT": "Administracija i odrzavanje sistema 1",
+      "TYPE": "PiV",
+      "PROFESSOR": "Lale Sinisa",
+      "GROUPS": "1s1"
+    }
+  },
+  {
+    "time": {
+      "day": "FRIDAY",
+      "startTime": "12:15",
+      "endTime": "15:00",
+      "startDate": "2023-01-01",
+      "endDate": "2023-12-31"
+    },
+    "scheduleRoom": {
+      "name": "Raf03 (u)",
+      "capacity": 0,
+      "equipment": []
+    },
+    "data": {
+      "SUBJECT": "Administracija i odrzavanje sistema 1",
+      "TYPE": "PiV",
+      "PROFESSOR": "Lale Sinisa",
+      "GROUPS": "1s1"
+    }
+  },
+  {
+    "time": {
+      "day": "WEDNESDAY",
+      "startTime": "19:15",
+      "endTime": "21:00",
+      "startDate": "2023-01-01",
+      "endDate": "2023-12-31"
+    },
+    "scheduleRoom": {
+      "name": "Raf01 (u)",
+      "capacity": 0,
+      "equipment": []
+    },
+    "data": {
+      "SUBJECT": "Organizacija racunara",
+      "TYPE": "V",
+      "PROFESSOR": "Vasiljkovic Sanja",
+      "GROUPS": "1s1"
+    }
+  },
+  {
+    "time": {
+      "day": "MONDAY",
+      "startTime": "09:15",
+      "endTime": "12:00",
+      "startDate": "2023-01-01",
+      "endDate": "2023-12-31"
+    },
+    "scheduleRoom": {
+      "name": "Raf01 (u)",
+      "capacity": 0,
+      "equipment": []
+    },
+    "data": {
+      "SUBJECT": "Osnovi programiranja",
+      "TYPE": "V",
+      "PROFESSOR": "Zgonjanin Nikola",
+      "GROUPS": "1s1"
+    }
+  },
+  {
+    "time": {
+      "day": "THURSDAY",
+      "startTime": "13:15",
+      "endTime": "15:00",
+      "startDate": "2023-01-01",
+      "endDate": "2023-12-31"
+    },
+    "scheduleRoom": {
+      "name": "Raf05 (u)",
+      "capacity": 0,
+      "equipment": []
+    },
+    "data": {
+      "SUBJECT": "Praktikum iz arhitekture racunara i operativnih sistema",
+      "TYPE": "V",
+      "PROFESSOR": "Radulovic Natasa",
+      "GROUPS": "1s1"
+    }
+  },
+  {
+    "time": {
+      "day": "TUESDAY",
+      "startTime": "17:15",
+      "endTime": "19:00",
+      "startDate": "2023-01-01",
+      "endDate": "2023-12-31"
+    },
+    "scheduleRoom": {
+      "name": "Raf11 (a)",
+      "capacity": 0,
+      "equipment": []
+    },
+    "data": {
+      "SUBJECT": "Engleski 1",
+      "TYPE": "P",
+      "PROFESSOR": "Vrbica-Matejic Vera",
+      "GROUPS": "1s1, 1s2"
+    }
+  },
+  {
+    "time": {
+      "day": "WEDNESDAY",
+      "startTime": "14:15",
+      "endTime": "17:00",
+      "startDate": "2023-01-01",
+      "endDate": "2023-12-31"
+    },
+    "scheduleRoom": {
+      "name": "Raf11 (a)",
+      "capacity": 0,
+      "equipment": []
+    },
+    "data": {
+      "SUBJECT": "Organizacija racunara",
+      "TYPE": "P",
+      "PROFESSOR": "Mirkovic Bogdan",
+      "GROUPS": "1s1, 1s2"
+    }
+  },
+  {
+    "time": {
+      "day": "WEDNESDAY",
+      "startTime": "17:15",
+      "endTime": "19:00",
+      "startDate": "2023-01-01",
+      "endDate": "2023-12-31"
+    },
+    "scheduleRoom": {
+      "name": "Raf11 (a)",
+      "capacity": 0,
+      "equipment": []
+    },
+    "data": {
+      "SUBJECT": "Osnovi programiranja",
+      "TYPE": "P",
+      "PROFESSOR": "Mirkovic Bogdan",
+      "GROUPS": "1s1, 1s2"
+    }
+  },
+  {
+    "time": {
+      "day": "THURSDAY",
+      "startTime": "09:15",
+      "endTime": "12:00",
+      "startDate": "2023-01-01",
+      "endDate": "2023-12-31"
+    },
+    "scheduleRoom": {
+      "name": "Raf03 (u)",
+      "capacity": 0,
+      "equipment": []
+    },
+    "data": {
+      "SUBJECT": "Administracija i odrzavanje sistema 1",
+      "TYPE": "PiV",
+      "PROFESSOR": "Lale Sinisa",
+      "GROUPS": "1s2"
+    }
+  },
+  {
+    "time": {
+      "day": "THURSDAY",
+      "startTime": "12:15",
+      "endTime": "15:00",
+      "startDate": "2023-01-01",
+      "endDate": "2023-12-31"
+    },
+    "scheduleRoom": {
+      "name": "Raf03 (u)",
+      "capacity": 0,
+      "equipment": []
+    },
+    "data": {
+      "SUBJECT": "Administracija i odrzavanje sistema 1",
+      "TYPE": "PiV",
+      "PROFESSOR": "Lale Sinisa",
+      "GROUPS": "1s2"
+    }
+  },
+  {
+    "time": {
+      "day": "TUESDAY",
+      "startTime": "19:15",
+      "endTime": "21:00",
+      "startDate": "2023-01-01",
+      "endDate": "2023-12-31"
+    },
+    "scheduleRoom": {
+      "name": "Raf04 (u)",
+      "capacity": 0,
+      "equipment": [
+        {
+          "name": "PC",
+          "amount": 30
+        }
+      ]
+    },
+    "data": {
+      "SUBJECT": "Organizacija racunara",
+      "TYPE": "V",
+      "PROFESSOR": "Vasiljkovic Sanja",
+      "GROUPS": "1s2"
+    }
+  },
+  {
+    "time": {
+      "day": "FRIDAY",
+      "startTime": "11:15",
+      "endTime": "14:00",
+      "startDate": "2023-01-01",
+      "endDate": "2023-12-31"
+    },
+    "scheduleRoom": {
+      "name": "Raf02 (u)",
+      "capacity": 0,
+      "equipment": []
+    },
+    "data": {
+      "SUBJECT": "Osnovi programiranja",
+      "TYPE": "V",
+      "PROFESSOR": "Zgonjanin Nikola",
+      "GROUPS": "1s2"
+    }
+  },
+  {
+    "time": {
+      "day": "FRIDAY",
+      "startTime": "09:15",
+      "endTime": "11:00",
+      "startDate": "2023-01-01",
+      "endDate": "2023-12-31"
+    },
+    "scheduleRoom": {
+      "name": "Raf01 (u)",
+      "capacity": 0,
+      "equipment": []
+    },
+    "data": {
+      "SUBJECT": "Praktikum iz arhitekture racunara i operativnih sistema",
+      "TYPE": "V",
+      "PROFESSOR": "Radulovic Natasa",
+      "GROUPS": "1s2"
+    }
+  },
+  {
+    "time": {
+      "day": "MONDAY",
+      "startTime": "12:15",
+      "endTime": "15:00",
+      "startDate": "2023-01-01",
+      "endDate": "2023-12-31"
+    },
+    "scheduleRoom": {
+      "name": "Raf02 (u)",
+      "capacity": 0,
+      "equipment": []
+    },
+    "data": {
+      "SUBJECT": "Administracija i odrzavanje sistema 1",
+      "TYPE": "PiV",
+      "PROFESSOR": "Kostadinovic Miodrag",
+      "GROUPS": "1s3"
+    }
+  },
+  {
+    "time": {
+      "day": "TUESDAY",
+      "startTime": "10:15",
+      "endTime": "13:00",
+      "startDate": "2023-01-01",
+      "endDate": "2023-12-31"
+    },
+    "scheduleRoom": {
+      "name": "Raf02 (u)",
+      "capacity": 0,
+      "equipment": []
+    },
+    "data": {
+      "SUBJECT": "Administracija i odrzavanje sistema 1",
+      "TYPE": "PiV",
+      "PROFESSOR": "Kostadinovic Miodrag",
+      "GROUPS": "1s3"
+    }
+  },
+  {
+    "time": {
+      "day": "WEDNESDAY",
+      "startTime": "13:15",
+      "endTime": "15:00",
+      "startDate": "2023-01-01",
+      "endDate": "2023-12-31"
+    },
+    "scheduleRoom": {
+      "name": "Raf03 (u)",
+      "capacity": 0,
+      "equipment": []
+    },
+    "data": {
+      "SUBJECT": "Organizacija racunara",
+      "TYPE": "V",
+      "PROFESSOR": "Radulovic Natasa",
+      "GROUPS": "1s3"
+    }
+  }
+]
